@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        #parent1 {
+            height: 200px;
+            position: relative;
+        }
+
+        #parent2 {
+            height: 100px;
+            width: 30%;
+            /* position: relative; */
+        }
+
+        #position {
+            /* 조상 요소 중 포지션된 요소 기준 */
+            position: absolute;
+            bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent1">
+        <div id="parent2">
+            <div id="position">
+                <h1>Lorem, ipsum dolor.</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
