@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <input type="text" id="input1" value="my name" onkeyup="showText();">
+    <input type="text" id="input2">
+    <script>
+    var inp = document.getElementById("input1");
+    console.log(inp.value);
+    
+    function showText() {
+        // console.log(document.getElementById("input1").value);
+        var v = document.getElementById("input1").value;
+        document.getElementById("input2").value = v;
+    }
+
+    </script>
+</body>
+</html>
