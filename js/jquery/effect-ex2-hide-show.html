@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(function() {
+            $("#btn1").hide();
+            $("input[type='password']").keyup(function() {
+                var v1 = $("#pass1").val();
+                var v2 = $("#pass2").val();
+
+                if (v1 == v2) {
+                    $("#btn1").show();
+                } else {
+                    $("#btn1").hide();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="password" id="pass1">
+    <br>
+    <input type="password" id="pass2">
+    <br>
+    <button id="btn1">등록</button>
+</body>
+</html>

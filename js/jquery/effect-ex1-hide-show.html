@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(function() {
+            $("#btn1").click(function() {
+                $("p").hide("slow");
+            });
+            $("#btn2").click(function() {
+                $("p").show("fast");
+            });
+            $("#btn3").click(function() {
+                $("p").toggle(2000);
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn1">hide</button>
+    <button id="btn2">show</button>
+    <button id="btn3">toggle</button>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nam accusamus nobis nisi eum quasi possimus amet dolorem, nemo perferendis labore, libero optio exercitationem totam laborum placeat tempora itaque quia.</p>
+</body>
+</html>
