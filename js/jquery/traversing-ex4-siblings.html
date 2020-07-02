@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(function() {
+            $("#li1").next().css("border", "5px solid green");
+            $("#li1").nextAll().css("font-size", "50px");
+            $("#li1").nextUntil(".last").css("background-color", "red");
+
+            $("#li1").siblings().css("color", "blue");
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>Lorem.</li>
+        <li>Autem!</li>
+        <li>Vel?</li>
+        <li>Minus.</li>
+        <li id="li1">Sint?</li>
+        <li>Illum.</li>
+        <li>Accusantium?</li>
+        <li>Quidem.</li>
+        <li class="last">Mollitia.</li>
+        <li>Alias.</li>
+    </ul>
+</body>
+</html>

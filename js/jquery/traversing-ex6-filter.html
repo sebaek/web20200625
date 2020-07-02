@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(function() {
+            // $("h1.note")
+            $("h1").filter(".note").css("color", "red");
+            // $("h1").not(".note").css("background-color", "yellow");
+            $("h1:not(.note)").css("background-color", "yellow");
+        });
+    </script>
+</head>
+<body>
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note">Sapiente, assumenda aliquam?</h1>
+    <h1 class="note">Blanditiis, dolorum nemo?</h1>
+    <h1 class="error">Lorem, ipsum dolor.</h1>
+    <h1 class="error">Ea, illo temporibus!</h1>
+    <h1 class="error">Temporibus, expedita consectetur.</h1>
+</body>
+</html>
