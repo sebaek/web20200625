@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+    </style>
+    <script>
+        $(function() {
+            var h1 = $("<h1>hello</h1>");
+            var h2 = $("<h1></h1>");
+            var h3 = $("<h1 />");
+
+            h2.text("javascript");
+
+            $("#result").append(h1);
+            $("#result").append(h2);
+            $("#result").append(h3);
+        });
+    </script>
+</head>
+<body>
+    <div id="result"></div>
+</body>
+</html>
